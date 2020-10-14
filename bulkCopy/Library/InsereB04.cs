@@ -66,9 +66,9 @@ namespace bulkCopy
         {
             if (Registros.Count == 0)
                 return;
-            
-            BulkInsert bulk = new BulkInsert();
-            bulk.InsertData<ModelB04>(Registros, "B04", _conexao, _dbType);
+
+            BulkInsert bulk = BulkFactory.Factory(_dbType, _conexao);
+            bulk.InsertData<ModelB04>(Registros, "B04");
         }
     }
 

@@ -4,58 +4,24 @@ using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Oracle.DataAccess.Client;
-using System.Linq.Expressions;
+
 
 namespace bulkCopy
 {
     public class BulkInsert
     {
+        protected internal string _connectionString;
+        protected internal int _timeOut = 600;
 
-        protected internal void InsertData<T>(List<T> list, string TableName, string ConnectionString, int dbType)
+        public BulkInsert(string ConnextionString)
         {
-            if (dbType == 1)
-                InsertDataSql<T>(list, TableName, ConnectionString);
-            else
-                InsertDataOrcl<T>(list, TableName, ConnectionString);
+            _connectionString = ConnextionString;
+        }
+        protected internal virtual void InsertData<T>(List<T> list, string TableName)
+        {
         }
 
-        protected internal void InsertDataSql<T>(List<T> list, string TableName, string ConnectionString)
-        {
-            using (SqlBulkCopy bulkcopy = new SqlBulkCopy(ConnectionString))
-            {
-
-                foreach (PropertyDescriptor prop in GetListroperties<T>())
-                    bulkcopy.ColumnMappings.Add(new SqlBulkCopyColumnMapping(prop.Name, prop.Name));
-
-                bulkcopy.BulkCopyTimeout = 660;
-                bulkcopy.DestinationTableName = TableName;
-                bulkcopy.WriteToServer(ConvertToDataTable(list));
-            }
-        }
-
-        protected internal void InsertDataOrcl<T>(List<T> list, string TableName, string ConnectionString)
-        {
-
-            using (OracleBulkCopy bulkcopy = new OracleBulkCopy(ConnectionString))
-            {
-
-                foreach (PropertyDescriptor prop in GetListroperties<T>())
-                    bulkcopy.ColumnMappings.Add(new OracleBulkCopyColumnMapping(prop.Name, prop.Name));
-
-                bulkcopy.BulkCopyTimeout = 660;
-                bulkcopy.DestinationTableName = TableName;
-                try
-                {
-                    bulkcopy.WriteToServer(ConvertToDataTable(list));
-                }
-                catch 
-                { 
-                    
-                }
-                    
-            }
-        }
-        protected DataTable ConvertToDataTable<T>(IList<T> data)
+        protected  DataTable ConvertToDataTable<T>(IList<T> data)
         {
             DataTable table = new DataTable();
             foreach (PropertyDescriptor prop in GetListroperties<T>())
@@ -70,7 +36,7 @@ namespace bulkCopy
             return table;
         }
 
-        PropertyDescriptorCollection GetListroperties<T>()
+        protected  PropertyDescriptorCollection GetListroperties<T>()
         {
             return TypeDescriptor.GetProperties(typeof(T));
         }

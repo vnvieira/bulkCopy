@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bulkCopy
+namespace bulkCopy.Library
 {
     public static class BulkFactory
     {

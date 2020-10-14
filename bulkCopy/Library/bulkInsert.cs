@@ -6,7 +6,7 @@ using System.ComponentModel;
 using Oracle.DataAccess.Client;
 
 
-namespace bulkCopy
+namespace bulkCopy.Library
 {
     public class BulkInsert
     {

@@ -109,8 +109,8 @@
     <Compile Include="Library\BulkFactory.cs" />
     <Compile Include="Library\BulkSqlServer.cs" />
     <Compile Include="Library\BulkOracle.cs" />
-    <Compile Include="Library\InsereB04.cs" />
-    <Compile Include="Library\ModelB04.cs" />
+    <Compile Include="Library\InsertTable.cs" />
+    <Compile Include="CodeGenerator\InsertB04.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

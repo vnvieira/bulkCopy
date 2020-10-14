@@ -1,6 +1,6 @@
-﻿using bulkCopy;
-using System;
-using System.Linq.Expressions;
+﻿using System;
+using bulkCopy.CodeGenerator;
+
 
 namespace TesteApp
 {
@@ -8,7 +8,7 @@ namespace TesteApp
     {
         static void Main()
         {
-            InsereB04 a = new InsereB04();
+            InsertB04 a = new InsertB04();
 
             for (int i = 0; i < 50000; i++)
             {
@@ -18,8 +18,8 @@ namespace TesteApp
                 Console.WriteLine(i);
             }
 
-            // a.InformarConexao("Server=(local);Database=RFPMDL;Trusted_Connection=True;", 1)
-            a.InformarConexao("Data Source=XE;User Id=STARSOFT;Password=STARSOFT;", 2);
+            // a.InformarConexao("Server=(local);Database=RFPMDL;Trusted_Connection=True;", 1, "B04")
+            a.InformarConexao("Data Source=XE;User Id=STARSOFT;Password=STARSOFT;", 2, "B04");
 
             try
             { a.ExecutarInsert(); }

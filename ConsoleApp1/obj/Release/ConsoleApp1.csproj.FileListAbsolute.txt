@@ -1,0 +1,11 @@
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\bin\Release\ConsoleApp1.exe.config
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\bin\Release\ConsoleApp1.exe
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\bin\Release\ConsoleApp1.pdb
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\bin\Release\bulkCopy.dll
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\bin\Release\Oracle.DataAccess.dll
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\bin\Release\bulkCopy.pdb
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\obj\Release\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\obj\Release\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\obj\Release\ConsoleApp1.csproj.CopyComplete
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\obj\Release\ConsoleApp1.exe
+C:\Users\vinic\source\repos\bulkCopy\ConsoleApp1\obj\Release\ConsoleApp1.pdb

@@ -1,0 +1,9 @@
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\bin\Release\bulkCopy.dll
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\bin\Release\bulkCopy.pdb
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\bin\Release\bulkCopy.tlb
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\obj\Release\bulkCopy.csproj.CoreCompileInputs.cache
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\obj\Release\bulkCopy.dll
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\obj\Release\bulkCopy.pdb
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\bin\Release\Oracle.DataAccess.dll
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\obj\Release\bulkCopy.csproj.CopyComplete
+C:\Users\vinic\source\repos\bulkCopy\bulkCopy\obj\Release\bulkCopy.csprojAssemblyReference.cache

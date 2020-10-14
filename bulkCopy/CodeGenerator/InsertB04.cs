@@ -40,9 +40,9 @@ namespace bulkCopy.CodeGenerator
             novoItem.STATUS = " ";
             novoItem.MYCONTROL = "1";
             novoItem.INTEGRATED = " ";
-         
 
-            Registros.Add(novoItem);
+
+            _registros.Add(novoItem);
         }
 
     }
